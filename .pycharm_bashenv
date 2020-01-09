@@ -1,0 +1,12 @@
+echo "Running $BASH_SOURCE"
+
+. $HOME/.conda_init
+
+if [[ $GIT_ASKPASS == *"PyCharm"* ]]; then
+  conda_env=$("$HOME/bin/find_conda_env.py")
+fi
+
+if [ -n "$conda_env" ]; then
+    echo "Activating conda environment: $conda_env"
+    conda activate "$conda_env"
+fi
