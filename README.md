@@ -4,10 +4,10 @@ Workaround to get PyCharm to run git hooks within the same conda environment as 
 
 ## Installation
 
-- `ln -s .conda_init $HOME/.conda_init`
-- `ln -s .pycharm_bashenv $HOME/.pycharm_bashenv`
-- `ln -s find_conda_env.py $HOME/bin/find_conda_env.py`
-- `ln -s PyCharm $HOME/bin/PyCharm`
+- `ln -sf "$(realpath .conda_init)" $HOME/.conda_init`
+- `ln -sf "$(realpath .pycharm_bashenv)" $HOME/.pycharm_bashenv`
+- `ln -sf "$(realpath find_conda_env.py)" $HOME/bin/find_conda_env.py`
+- `ln -sf "$(realpath PyCharm)" $HOME/bin/PyCharm`
 
 ## Use
 Open PyCharm using the `PyCharm` script, and: Hey presto!
