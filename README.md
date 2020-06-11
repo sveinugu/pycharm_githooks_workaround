@@ -8,8 +8,9 @@ git-hook. This speeds up common PyCharm git command significantly.
 
 ## Requirements:
 
-- **Platform:** MacOS (but the scripts might work also on other platforms).
+- **Platform:** MacOS (but the scripts might work with some modifications also on other platforms).
 - **Shell:** `bash`
+- miniconda (v3) installed using Homebrew (recommended approach to combining Homebrew and Conda)
 - Python v2 or v3
 
 ## Setup:
