@@ -10,7 +10,7 @@ git-hook. This speeds up common PyCharm git command significantly.
 
 - **Platform:** MacOS (but the scripts might work also on other platforms).
 - **Shell:** `bash`
-- Python v3
+- Python v2 or v3
 
 ## Setup:
 
