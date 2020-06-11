@@ -1,11 +1,18 @@
 #!/bin/bash
 
-source .conda_init
+curpath=$(dirname $(realpath -s $BASH_SOURCE))
 
-conda_env=$("./find_conda_env.py")
+args=("$@")
+x=(${args[@]//*[-=]*})
+git_cmd="${x[0]}"
 
-if [ -n "$conda_env" ]; then
-    conda activate "$conda_env"
+if [[ "$git_cmd" =~ ^(am|commit|rebase|checkout|clone|merge|pull|push|gc)$ ]]; then
+  source $curpath/.conda_init
+  conda_env=$("$curpath/find_conda_env.py")
+  if [ -n "$conda_env" ]; then
+      echo "Activating $conda_env..."
+      conda activate "$conda_env"
+  fi
 fi
 
 git "$@"

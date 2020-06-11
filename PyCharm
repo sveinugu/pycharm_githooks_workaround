@@ -1,1 +1,0 @@
-. $HOME/.conda_init && BASH_ENV=$HOME/.pycharm_bashenv conda run -n base open /Applications/PyCharm.app
