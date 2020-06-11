@@ -6,10 +6,11 @@ PyCharm project.
 Only activates the Conda environment if PyCharm runs a git command that might be connected to a 
 git-hook. This speeds up common PyCharm git command significantly. 
 
-## Platform:
+## Requirements:
 
-Implemented for MacOS running `bash` as the default shell, but the scripts might work also on 
-other platforms.
+- **Platform:** MacOS (but the scripts might work also on other platforms).
+- **Shell:** `bash`
+- Python v3
 
 ## Setup:
 
